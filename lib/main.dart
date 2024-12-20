@@ -87,7 +87,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text("Solve Your Math", style: TextStyle(fontSize: 36)),
+        title: const Text("Solve Your Math", style: TextStyle(fontSize: 25)),
         backgroundColor: Colors.teal,
         foregroundColor: Colors.white,
       ),
@@ -123,7 +123,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
                 _buildButton("7"),
                 _buildButton("8"),
                 _buildButton("9"),
-                _buildButton("x"),
+                _buildButton("*"),
               ],
             ),
           ),
@@ -164,7 +164,7 @@ class CalculatorButton extends StatelessWidget {
             boxShadow: [
               BoxShadow(
                 // ignore: deprecated_member_use
-                color: Colors.black.withOpacity(0.3), // Shadow color
+                color: Colors.grey.withOpacity(0.3), // Shadow color
                 blurRadius: 10, // Spread of the shadow
                 offset: const Offset(2, 2), // Position of the shadow
               ),
