@@ -88,7 +88,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
       appBar: AppBar(
         centerTitle: true,
         title: const Text("Solve Your Math", style: TextStyle(fontSize: 36)),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.teal,
         foregroundColor: Colors.white,
       ),
       body: Column(
@@ -159,7 +159,7 @@ class CalculatorButton extends StatelessWidget {
           alignment: Alignment.center,
           margin: const EdgeInsets.all(6),
           decoration: BoxDecoration(
-            color: Colors.black,
+            color: Colors.teal,
             borderRadius: BorderRadius.circular(50), // Circular border radius
             boxShadow: [
               BoxShadow(
