@@ -87,7 +87,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text("Calculator", style: TextStyle(fontSize: 36)),
+        title: const Text("Solve Your Math", style: TextStyle(fontSize: 36)),
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
       ),
