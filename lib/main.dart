@@ -62,12 +62,12 @@ class _CalculatorAppState extends State<CalculatorApp> {
           children: [
             Text(
               _input,
-              style: const TextStyle(fontSize: 32, color: Colors.black),
+              style: const TextStyle(fontSize: 40, color: Colors.black),
             ),
             const SizedBox(height: 10),
             Text(
               _result,
-              style: const TextStyle(fontSize: 24, color: Colors.grey),
+              style: const TextStyle(fontSize: 39, color: Colors.grey),
             ),
           ],
         ),
@@ -155,24 +155,27 @@ class CalculatorButton extends StatelessWidget {
     return Expanded(
       child: GestureDetector(
         onTap: onTap,
-        child: Container(
-          alignment: Alignment.center,
-          margin: const EdgeInsets.all(6),
-          decoration: BoxDecoration(
-            color: Colors.teal,
-            borderRadius: BorderRadius.circular(50), // Circular border radius
-            boxShadow: [
-              BoxShadow(
-                // ignore: deprecated_member_use
-                color: Colors.grey.withOpacity(0.3), // Shadow color
-                blurRadius: 10, // Spread of the shadow
-                offset: const Offset(2, 2), // Position of the shadow
-              ),
-            ],
-          ),
-          child: Text(
-            text,
-            style: const TextStyle(fontSize: 36, color: Colors.white),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            alignment: Alignment.center,
+            
+            decoration: BoxDecoration(
+              color: Colors.teal,
+              borderRadius: BorderRadius.circular(20), // Circular border radius
+              boxShadow: [
+                BoxShadow(
+                  // ignore: deprecated_member_use
+                  color: Colors.grey.withOpacity(0.3), // Shadow color
+                  blurRadius: 20, // Spread of the shadow
+                  offset: const Offset(2, 2), // Position of the shadow
+                ),
+              ],
+            ),
+            child: Text(
+              text,
+              style: const TextStyle(fontSize: 36, color: Colors.white),
+            ),
           ),
         ),
       ),
